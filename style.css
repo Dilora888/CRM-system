@@ -1,0 +1,218 @@
+body {
+  background-color: #f5f5f5;
+  font-family: "Arial", sans-serif;
+  color: #333;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 40px 20px;
+}
+
+#container {
+  background-color: #fff;
+  max-width: 770px;
+  margin: auto;
+}
+header {
+  max-width: 770px;
+  height: 90px;
+  /* padding: 20px; */
+  margin: 0;
+  background-color: white; /* светлый фон для header */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: 20px;
+  object-fit: cover;
+}
+
+header .search {
+  max-width: 580px;
+  margin-left: 53px;
+  padding: 0.5rem 1.5rem;
+}
+
+#client-table th {
+  border: none;
+  font-weight: normal;
+  color: #5a5a5a;
+}
+
+#client-table th,
+#client-table td {
+  vertical-align: middle;
+}
+
+#client-table tbody {
+  background-color: #fff;
+  display: none;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px; /* высота блока */
+}
+.centers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px; /* высота блока */
+}
+#loading {
+  display: flex;
+  margin: auto;
+}
+.spinner-border {
+  width: 50px;
+  height: 50px;
+  color: #9873ff;
+}
+#addClientButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #9873ff;
+  color: #9873ff;
+  padding: 10px 20px;
+  background-color: transparent;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+#addClientButton svg {
+  margin-right: 10px;
+  fill: currentColor;
+}
+.sort-icon {
+  font-size: 12px;
+  color: #8369f4;
+}
+.btn{
+  background-color: #8369f4;
+}
+.contact-icon {
+  margin-right: 5px;
+}
+.contact-icon img {
+  width: 20px;
+  height: 20px;
+}
+.contact-tooltip {
+  position: relative;
+  display: inline-block;
+}
+.contact-tooltip .tooltip-text {
+  visibility: hidden;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; /* Смещение */
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  width: 180px;
+}
+.contact-tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Общие стили для модалок */
+.modal {
+  display: none; /* Скрывать модалку по умолчанию */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 400px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 15px;
+}
+
+/* Стили для input с нижней границей */
+.border-bottom {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid black;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+
+.add{
+  margin-right: 10px;
+}
+/* Кнопка добавления контактов */
+.add-contact-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  background-color: #8369f4;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Кнопка сохранения */
+.save-btn {
+  background-color: #8369f4;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+/* Ссылка для удаления клиента */
+.delete-client-link {
+  color: red;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Модалка удаления клиента */
+.delete-btn {
+  padding: 10px;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.cancel-btn {
+  background-color: transparent;
+  color: #8369f4;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+  margin-top: 10px;
+}
